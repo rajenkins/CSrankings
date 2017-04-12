@@ -147,7 +147,8 @@
 						<div class="panel-heading" data-toggle="collapse" data-target="#areasall" style="padding-bottom:0px">
 
 							<h4 style="margin-bottom:0px; margin-top:0px"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>  All Areas of Study
-								<span style="font-size: 80%; float:right">[<a class="only_these_areas" onClick="CSRankings.activateNone(); return false;"><font color="black"><b>off</b></font></a> | <a class="only_these_areas" onClick="CSRankings.activateAll(); return false;"><font color="black"><b>on</b></font></a>]</span>
+								<span style="font-size: 80%; float:right">
+									<input type="checkbox" name="check_all" id="check_all" onClick="CSRankings.toggleActivateAll(this)" value="1.0" checked/>
 							</h4>
 							<p style="font-size:12px">expand to select specific areas for your ranking.</p>
 

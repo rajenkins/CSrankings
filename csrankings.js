@@ -33,7 +33,30 @@ $('.panel').on('shown.bs.collapse', function (e) {
 });
 $('.panel a').click(function(event){
             event.stopPropagation();
-        });
+});
+$('.panel input').click(function(event){
+            event.stopPropagation();
+});
+$('.panel input').click(function(event){
+            event.stopPropagation();
+});
+$('#areasAll input[type=checkbox]').change(function() { // while you're at it listen for change rather than click, this is in case something else modifies the checkbox
+    var all_checkboxes = $('#areasAll input[type="checkbox"]');
+    var main_check = $('#check_all')
+    var ln = all_checkboxes.filter(":checked").length
+
+    if (all_checkboxes.length === ln) {
+        main_check.prop('checked',true);
+        main_check.prop('indeterminate',false);
+    }
+    else if(ln == 0) {
+        main_check.prop('checked',false);
+        main_check.prop('indeterminate',false);
+    }
+    else {
+        main_check.prop('indeterminate',true);
+    }
+});
 
 var CSRankings = (function () {
     function CSRankings() {
@@ -809,6 +832,18 @@ CSRankings.buildOutputString = function (displayPercentages, numAreas, univagg, 
             widget.addClass("glyphicon-chevron-down");
         }
     };
+    CSRankings.toggleActivateAll = function (target) {
+        var all_checkboxes = $('#areasAll input[type="checkbox"]');
+        $(target).prop('indeterminate',false);
+
+        if (all_checkboxes.length === all_checkboxes.filter(":checked").length) {
+            $(target).prop('checked',false); 
+            return this.activateAll(false);
+        }
+        $(target).prop('checked',true);
+        return this.activateAll(true);
+    };
+
     CSRankings.activateAll = function (value) {
         if (value === void 0) { value = true; }
         for (var i = 0; i < CSRankings.areas.length; i++) {
@@ -851,6 +886,7 @@ CSRankings.buildOutputString = function (displayPercentages, numAreas, univagg, 
     };
     return CSRankings;
 }());
+CSRankings.allState = 0;
 CSRankings.coauthorFile = "faculty-coauthors.csv";
 CSRankings.authorinfoFile = "generated-author-info.csv";
 CSRankings.countryinfoFile = "country-info.csv";
