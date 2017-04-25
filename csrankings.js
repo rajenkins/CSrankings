@@ -212,8 +212,8 @@ var CSRankings = (function () {
                 "titleSubtitlePadding": 9
             },
             "size": {
-                "canvasHeight": 500,
-                "canvasWidth": 500,
+                "canvasHeight": 400,
+                "canvasWidth": 400,
                 "pieInnerRadius": "38%",
                 "pieOuterRadius": "83%"
             },
@@ -741,7 +741,7 @@ CSRankings.buildOutputString = function (displayPercentages, numAreas, univagg, 
                 s += "</td>";
                 s += '<td align="right">' + (Math.round(10.0 * v) / 10.0).toFixed(1) + "</td>";
                 s += "</tr>\n";
-                s += '<tr id="' + esc + '-chartCont" class="hidden";"><td colspan="3"><div style="width: 100%; height: 500px;" id="'
+                s += '<tr id="' + esc + '-chartCont" class="hidden";"><td colspan="3"><div style="width: 100%; height: 400px;" id="'
                 + esc
                 + '-chart">' + '</div></td></tr>';
                 s += '<tr style="display:none;" id="' + dept + '-facultyCont"><td colspan="4"><div id="' + dept + '-faculty">' + univtext[dept] + '</div></td></tr>';
