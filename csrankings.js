@@ -657,7 +657,7 @@ CSRankings.computeStats = function (deptNames, areaDeptAdjustedCount, areas, num
 + '<td align="right"><small>'
 + (Math.round(10.0 * facultyAdjustedCount[name_5 + dept]) / 10.0).toFixed(1)
 + "</small></td></tr>"
-+ "<tr id='" + escape(name_5) + "-chartCont' class='hidden';'><td colspan=\"4\">"
++ "<tr id='" + escape(name_5) + "-chartCont' class='hidden';'><td colspan=\"3\">"
 + '<div" id="' + escape(name_5) + "-chart" + '">'
 + '</div>'
 + "</td></tr>";
@@ -741,7 +741,7 @@ CSRankings.buildOutputString = function (displayPercentages, numAreas, univagg, 
                 s += "</td>";
                 s += '<td align="right">' + (Math.round(10.0 * v) / 10.0).toFixed(1) + "</td>";
                 s += "</tr>\n";
-                s += '<tr id="' + esc + '-chartCont" class="hidden";"><td colspan="4"><div style="width: 100%; height: 350px;" id="'
+                s += '<tr id="' + esc + '-chartCont" class="hidden";"><td colspan="3"><div style="width: 100%; height: 500px;" id="'
                 + esc
                 + '-chart">' + '</div></td></tr>';
                 s += '<tr style="display:none;" id="' + dept + '-facultyCont"><td colspan="4"><div id="' + dept + '-faculty">' + univtext[dept] + '</div></td></tr>';
