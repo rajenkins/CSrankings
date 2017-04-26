@@ -62,57 +62,57 @@ areadict = {
     # SIGPLAN
     'plan': ['POPL', 'PLDI'],  # , 'OOPSLA'],
     # SIGHPC
-    'hpc': ['SC', 'HPDC', 'ICS'],
+    'hpc': ['SC', 'HPDC', 'ICS', 'IJHPCA'],
     # SIGLOG
-    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS'],
+    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS', 'LMCS'],
     # SIGSOFT
-    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE'],
+    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE', 'TSE'],
     # SIGOPS
     # - OSDI/SOSP alternate years, so are treated as one venue; USENIX ATC has two variants in DBLP
-    'ops': ['SOSP', 'OSDI', 'EuroSys', 'USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track'],
+    'ops': ['SOSP', 'OSDI', 'EuroSys', 'USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track', 'SIGOPS Operating Systems Review'],
     # SIGARCH
     'arch': ['ISCA', 'MICRO', 'ASPLOS', 'JSA'],
     # SIGACT
-    'act': ['STOC', 'FOCS', 'SODA'],
+    'act': ['STOC', 'FOCS', 'SODA', 'Randomm Structures & Algorithms'],
     # SIGCOMM
-    'comm': ['SIGCOMM', 'INFOCOM', 'NSDI'],
+    'comm': ['SIGCOMM', 'INFOCOM', 'NSDI', 'JNCA'],
     # SIGSAC
     # - USENIX Security listed twice to reflect variants in DBLP
-    'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security'],
-    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD'],
-    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI'],
+    'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security', 'CompSec'],
+    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD', 'JMLR'],
+    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI', 'ESWA'],
     # AAAI listed to account for AAAI/IAAI joint conference
-    'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference'],
+    'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS'],
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH Asia
-    'graph': ['ACM Trans. Graph.', 'SIGGRAPH'],
+    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'TOG'],
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
     'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference'],
     # SIGIR
-    'ir': ['WWW', 'SIGIR'],
+    'ir': ['WWW', 'SIGIR', 'Journal of Web Semantics'],
     # SIGCHI
-    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST'],
+    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'IJHCS'],
     'nlp': ['EMNLP', 'ACL', 'ACL (1)', 'ACL (2)', 'NAACL', 'HLT-NAACL',
             'ACL/IJCNLP',  # -- in 2009 was joint
             'COLING-ACL',  # -- in 1998 was joint
             'EMNLP-CoNLL',  # -- in 2012 was joint
             'HLT/EMNLP',  # -- in 2005 was joint
             ],
-    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)'],
+    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV'],
     # SIGMOBILE
-    'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys'],
-    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems'],
-    'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)'],
+    'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys', 'TMC'],
+    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'IJRR'],
+    'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)', 'Designs, Codes and Cryptography'],
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
-    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)'],
+    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology'],
     # SIGDA
-    'da': ['ICCAD', 'DAC'],
+    'da': ['ICCAD', 'DAC', 'TODAES'],
     # SIGBED
-    'bed': ['RTSS', 'RTAS', 'EMSOFT'],
+    'bed': ['RTSS', 'RTAS', 'EMSOFT', 'TECS', 'Real-Time Systems'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
-    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.']
+    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', 'TVGC']
 }
 
 # ISMB proceedings are published as special issues of Bioinformatics.
