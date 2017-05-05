@@ -88,7 +88,7 @@ def parseDBLP(facultydict):
                 for child in node:
                     if (child.tag == 'author'):
                         authorName = child.text
-                        if authorName != null:
+                        if authorName != None:
                             authorName = authorName.strip()
                             if (True): # authorName in facultydict):
                                 authorsOnPaper += 1
