@@ -85,14 +85,14 @@ areadict = {
     'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS', 'ICDE', 'WSDM', 'DEXA', 'TDKE', 'TKDD'],
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH AsiaCSCW
-    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'TOG', 'Web3D', 'VAST', 'CG'],
+    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'ACM Trans. Graph.', 'Web3D', 'IEEE VAST', 'Computers &amp; Graphics', 'GRAPP'],
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
     'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference', 'CMG', 'ISPASS', 'TIM', 'IJMTIE'],
     # SIGIR
     'ir': ['WWW', 'SIGIR', 'Journal of Web Semantics', 'ICTIR', 'SIGMM', 'SEMWEB', 'IR', 'IRS'],
     # SIGCHI
-    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'IJHCS', 'CSCW', 'HRI', 'TOCHI', 'TAFFCO'],
+    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'Int. J. Hum.-Comput. Stud.', 'CSCW', 'HRI', 'ACM Trans. Comput.-Hum. Interact.', 'IEEE Trans. Affective Computing'],
     'nlp': ['EMNLP', 'ACL', 'ACL (1)', 'ACL (2)', 'NAACL', 'HLT-NAACL',
             'ACL/IJCNLP',  # -- in 2009 was joint
             'COLING-ACL',  # -- in 1998 was joint
@@ -103,17 +103,17 @@ areadict = {
     'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV', 'VISIGRAPP', 'CVIU', 'ACVPR'],
     # SIGMOBILE
     'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys', 'TMC', 'MobiCASE', 'MobiHoc', 'PerCom', 'IJMCMC', 'SIGMOBILE', 'IJWMC'],
-    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'IJRR', 'Humanoids', 'TRob', 'JIRS'],
+    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'I. J. Robotics Res.', 'Humanoids', 'Journal of Intelligent and Robotic Systems'],
     'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)', 'Designs, Codes and Cryptography', 'TCC', 'ASIACRYPT', 'CANS', 'JOC', 'JMC'],
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
-    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology', 'BCB', 'BIBM', 'Bioinformatics', 'BMCBI', 'TCBB'],
+    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology', 'BCB', 'BIBM', 'BMC Bioinformatics', 'IEEE/ACM Trans. Comput. Biology Bioinform.'],
     # SIGDA
     'da': ['ICCAD', 'DAC', 'TODAES', 'DATE', 'FTEDA'],
     # SIGBED
     'bed': ['RTSS', 'RTAS', 'EMSOFT', 'TECS', 'Real-Time Systems', 'RTCSA', 'LCTES', 'JRTIP', 'IJERTCS'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
-    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', 'TVCG', 'GRAPP', '3DIM', 'JVCA', 'IVS']
+    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', '3DV', 'Journal of Visualization and Computer Animation', 'Information Visualization']
 }
 
 # ISMB proceedings are published as special issues of Bioinformatics.
