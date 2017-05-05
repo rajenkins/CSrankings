@@ -814,6 +814,7 @@ CSRankings.buildOutputString = function (displayPercentages, numAreas, univagg, 
         }
         else {
             chartCont.addClass("hidden");
+            $("[id='" + name + "-chart']").html("");
         }
     };
     /* Expand or collape the view of all faculty in a department. */
