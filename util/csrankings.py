@@ -64,7 +64,7 @@ areadict = {
     # SIGHPC
     'hpc': ['SC', 'HPDC', 'ICS', 'IJHPCA', 'HPEC', 'HPCC', 'IJHPCN', 'IJGHPC'],
     # SIGLOG
-    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS', 'LMCS'],
+    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS', 'LMCS', 'CSL', 'ICLP', 'TOCL', 'TPLP', 'LOGCOMM'],
     # SIGSOFT
     'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE', 'TSE', 'SWSTE', 'SERA' 'IEEE Software', 'ESE', 'TOSEM', 'SPE'],
     # SIGOPS
@@ -79,40 +79,41 @@ areadict = {
     # SIGSAC
     # - USENIX Security listed twice to reflect variants in DBLP
     'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security', 'CompSec', 'S&P', 'ACSAC', 'IJICS', 'IMCS'],
-    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD', 'JMLR'],
-    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI', 'ESWA'],
+    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD', 'JMLR', 'ICMLA', 'MLDM', 'ML', 'TKDD'],
+    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI', 'ESWA', 'ICTAI', 'ASC', 'TFS', 'TSMC'],
     # AAAI listed to account for AAAI/IAAI joint conference
     'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS', 'ICDE', 'WSDM', 'DEXA', 'TDKE', 'TKDD'],
     # SIGGRAPH
-    # - special handling of TOG to select SIGGRAPH and SIGGRAPH Asia
-    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'TOG'],
+    # - special handling of TOG to select SIGGRAPH and SIGGRAPH AsiaCSCW
+    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'TOG', 'Web3D', 'VAST', 'CG'],
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
     'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference', 'CMG', 'ISPASS', 'TIM', 'IJMTIE'],
     # SIGIR
-    'ir': ['WWW', 'SIGIR', 'Journal of Web Semantics'],
+    'ir': ['WWW', 'SIGIR', 'Journal of Web Semantics', 'ICTIR', 'SIGMM', 'SEMWEB', 'IR', 'IRS'],
     # SIGCHI
-    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'IJHCS'],
+    'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'IJHCS', 'CSCW', 'HRI', 'TOCHI', 'TAFFCO'],
     'nlp': ['EMNLP', 'ACL', 'ACL (1)', 'ACL (2)', 'NAACL', 'HLT-NAACL',
             'ACL/IJCNLP',  # -- in 2009 was joint
             'COLING-ACL',  # -- in 1998 was joint
             'EMNLP-CoNLL',  # -- in 2012 was joint
             'HLT/EMNLP',  # -- in 2005 was joint
+            'CoNLL', 'NLDB', 'NLE', 'TANLP'
             ],
-    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV'],
+    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV', 'VISIGRAPP', 'CVIU', 'ACVPR'],
     # SIGMOBILE
     'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys', 'TMC', 'MobiCASE', 'MobiHoc', 'PerCom', 'IJMCMC', 'SIGMOBILE', 'IJWMC'],
-    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'IJRR'],
+    'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'IJRR', 'Humanoids', 'TRob', 'JIRS'],
     'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)', 'Designs, Codes and Cryptography', 'TCC', 'ASIACRYPT', 'CANS', 'JOC', 'JMC'],
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
-    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology'],
+    'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology', 'BCB', 'BIBM', 'Bioinformatics', 'BMCBI', 'TCBB'],
     # SIGDA
     'da': ['ICCAD', 'DAC', 'TODAES', 'DATE', 'FTEDA'],
     # SIGBED
     'bed': ['RTSS', 'RTAS', 'EMSOFT', 'TECS', 'Real-Time Systems', 'RTCSA', 'LCTES', 'JRTIP', 'IJERTCS'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
-    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', 'TVCG']
+    'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', 'TVCG', 'GRAPP', '3DIM', 'JVCA', 'IVS']
 }
 
 # ISMB proceedings are published as special issues of Bioinformatics.
