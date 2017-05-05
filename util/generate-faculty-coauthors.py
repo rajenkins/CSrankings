@@ -88,15 +88,16 @@ def parseDBLP(facultydict):
                 for child in node:
                     if (child.tag == 'author'):
                         authorName = child.text
-                        authorName = authorName.strip()
-                        if (True): # authorName in facultydict):
-                            authorsOnPaper += 1
-                            if (not authorName in coauthors):
-                                coauthors[authorName] = {}
-                            if (not (year,areaname) in coauthors[authorName]):
-                                coauthors[authorName][(year,areaname)] = set([])
-                            coauthorsList.append(authorName)
-                            papersWritten[authorName] = papersWritten.get(authorName, 0) + 1
+                        if authorname != null:
+                            authorName = authorName.strip()
+                            if (True): # authorName in facultydict):
+                                authorsOnPaper += 1
+                                if (not authorName in coauthors):
+                                    coauthors[authorName] = {}
+                                if (not (year,areaname) in coauthors[authorName]):
+                                    coauthors[authorName][(year,areaname)] = set([])
+                                coauthorsList.append(authorName)
+                                papersWritten[authorName] = papersWritten.get(authorName, 0) + 1
 
                 # No authors? Bail.
                 if (authorsOnPaper == 0):
