@@ -90,7 +90,7 @@ areadict = {
     'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS', 'ICDE', 'WSDM', 'DEXA', 'IEEE Trans. Knowl. Data Eng.', 'TKDD'],
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH AsiaCSCW
-    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'ACM Trans. Graph.', 'Web3D', 'IEEE VAST', 'Computers &amp; Graphics', 'GRAPP'],
+    'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'ACM Trans. Graph.', 'Web3D', 'IEEE VAST', 'Computers &amp; Graphics', 'GRAPP', 'Comput. Graph. Forum'],
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
     'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference', 'Int. CMG Conference', 'ISPASS', 'IEEE Trans. Instrumentation and Measurement', 'IJMTIE'],
