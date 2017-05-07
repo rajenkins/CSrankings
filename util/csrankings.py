@@ -60,37 +60,42 @@ areadict = {
     # Max three most selective venues per area for now.
     #
     # SIGPLAN
-    'plan': ['POPL', 'PLDI', 'SPLASH', 'ICALP', 'PLC', 'TOPLAS', 'FTPL'],  # , 'OOPSLA'],
+    'plan': ['POPL', 'PLDI', 'SPLASH', 'ICALP', 'PLC', 'ACM Trans. Program. Lang. Syst.', 'Foundations and Trends in Programming Language'],  # , 'OOPSLA'],
     # SIGHPC
     'hpc': ['SC', 'HPDC', 'ICS', 'IJHPCA', 'HPEC', 'HPCC', 'IJHPCN', 'IJGHPC'],
     # SIGLOG
-    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS', 'LMCS', 'CSL', 'ICLP', 'TOCL', 'TPLP', 'LOGCOMM'],
+    'log': ['CAV', 'CAV (1)', 'CAV (2)', 'LICS', 'CSL-LICS', 'LMCS', 'CSL', 'ICLP', 'ACM Trans. Comput. Log.', 'TPLP', 'J. Log. Comput.'],
     # SIGSOFT
-    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE', 'TSE', 'SWSTE', 'SERA' 'IEEE Software', 'ESE', 'TOSEM', 'SPE'],
+    'soft': ['ICSE', 'ICSE (1)', 'ICSE (2)', 'SIGSOFT FSE', 'ESEC/SIGSOFT FSE', 'TSE', 'SwSTE', 'SERA' 'IEEE Software', 'Empirical Software Engineering', 'ACM Trans. Softw. Eng. Methodol.ACM Trans. Softw. Eng. Methodol.', 'Softw., Pract. Exper.'],
     # SIGOPS
     # - OSDI/SOSP alternate years, so are treated as one venue; USENIX ATC has two variants in DBLP
     'ops': ['SOSP', 'OSDI', 'EuroSys', 'USENIX Annual Technical Conference', 'USENIX Annual Technical Conference, General Track', 'SIGOPS Operating Systems Review', 'ASPLOS', 'HotOS'],
     # SIGARCH
     'arch': ['ISCA', 'MICRO', 'ASPLOS', 'JSA', 'HPCA', 'IJAC', 'CAL'],
     # SIGACT
-    'act': ['STOC', 'FOCS', 'SODA', 'Randomm Structures & Algorithms', 'ISAAC', 'SPAA', 'Algorithmica', 'JAL', 'TALG'],
+    'act': ['STOC', 'FOCS', 'SODA', 'Randomm Structures & Algorithms', 'ISAAC', 'SPAA', 'Algorithmica', 'J. Algorithms', 'ACM Trans. Algorithms'],
     # SIGCOMM
-    'comm': ['SIGCOMM', 'INFOCOM', 'NSDI', 'JNCA', 'IMC', 'Computer Networks'],
+    'comm': ['SIGCOMM', 'INFOCOM', 'NSDI', 'JNCA', 'Internet Measurement Conference', 'Computer Networks'],
     # SIGSAC
     # - USENIX Security listed twice to reflect variants in DBLP
-    'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security', 'CompSec', 'S&P', 'ACSAC', 'IJICS', 'IMCS'],
-    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD', 'JMLR', 'ICMLA', 'MLDM', 'ML', 'TKDD'],
-    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI', 'ESWA', 'ICTAI', 'ASC', 'TFS', 'TSMC'],
+    'sec': ['IEEE Symposium on Security and Privacy', 'ACM Conference on Computer and Communications Security', 'USENIX Security Symposium', 'USENIX Security', 'CompSec', 'IEEE Symposium on Security and Privacy', 'ACSAC', 'IJICS', 'Inf. Manag. Comput. Security'],
+    'mlmining': ['NIPS', 'ICML', 'ICML (1)', 'ICML (2)', 'ICML (3)', 'KDD', 'JMLR', 'ICMLA', 'MLDM', 'ML'],
+    'ai': ['AAAI', 'AAAI/IAAI', 'IJCAI', 'ESWA', 'ICTAI', 'IEEE Trans. Fuzzy Systems',
+            'IEEE Trans. Systems, Man, and Cybernetics, Part A',
+            'IEEE Trans. Systems, Man, and Cybernetics, Part B',
+            'IEEE Trans. Systems, Man, and Cybernetics, Part C',
+            'IEEE Trans. Systems, Man, and Cybernetics: Systems',
+            'IEEE Trans. Cybernetics', 'IEEE Trans. Human-Machine Systems'],
     # AAAI listed to account for AAAI/IAAI joint conference
-    'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS', 'ICDE', 'WSDM', 'DEXA', 'TDKE', 'TKDD'],
+    'mod': ['VLDB', 'PVLDB', 'SIGMOD Conference', 'TODS', 'ICDE', 'WSDM', 'DEXA', 'IEEE Trans. Knowl. Data Eng.', 'TKDD'],
     # SIGGRAPH
     # - special handling of TOG to select SIGGRAPH and SIGGRAPH AsiaCSCW
     'graph': ['ACM Trans. Graph.', 'SIGGRAPH', 'ACM Trans. Graph.', 'Web3D', 'IEEE VAST', 'Computers &amp; Graphics', 'GRAPP'],
     # SIGMETRICS
     # - Two variants for each, as in DBLP.
-    'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference', 'CMG', 'ISPASS', 'TIM', 'IJMTIE'],
+    'metrics': ['SIGMETRICS', 'SIGMETRICS/Performance', 'IMC', 'Internet Measurement Conference', 'Int. CMG Conference', 'ISPASS', 'IEEE Trans. Instrumentation and Measurement', 'IJMTIE'],
     # SIGIR
-    'ir': ['WWW', 'SIGIR', 'Journal of Web Semantics', 'ICTIR', 'SIGMM', 'SEMWEB', 'IR', 'IRS'],
+    'ir': ['WWW', 'SIGIR', 'J. Web Sem.', 'ICTIR', 'ICMR', 'International Semantic Web Conference', 'International Semantic Web Conference (1)', 'International Semantic Web Conference (2)','Information Storage and Retrieval'],
     # SIGCHI
     'chi': ['CHI', 'UbiComp', 'Ubicomp', 'UIST', 'Int. J. Hum.-Comput. Stud.', 'CSCW', 'HRI', 'ACM Trans. Comput.-Hum. Interact.', 'IEEE Trans. Affective Computing'],
     'nlp': ['EMNLP', 'ACL', 'ACL (1)', 'ACL (2)', 'NAACL', 'HLT-NAACL',
@@ -98,20 +103,19 @@ areadict = {
             'COLING-ACL',  # -- in 1998 was joint
             'EMNLP-CoNLL',  # -- in 2012 was joint
             'HLT/EMNLP',  # -- in 2005 was joint
-            'CoNLL', 'NLDB', 'NLE', 'TANLP'
-            ],
-    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV', 'VISIGRAPP', 'CVIU', 'ACVPR'],
+            'CoNLL', 'NLDB', 'Natural Language Engineering'],
+    'vision': ['CVPR', 'CVPR (1)', 'CVPR (2)', 'ICCV', 'ECCV (1)', 'ECCV (2)', 'ECCV (3)', 'ECCV (4)', 'ECCV (5)', 'ECCV (6)', 'ECCV (7)', 'IJCV', 'VISIGRAPP (1: GRAPP)', 'VISIGRAPP (2: IVAPP)', 'Computer Vision and Image Understanding'],
     # SIGMOBILE
-    'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys', 'TMC', 'MobiCASE', 'MobiHoc', 'PerCom', 'IJMCMC', 'SIGMOBILE', 'IJWMC'],
+    'mobile': ['MobiSys', 'MobiCom', 'MOBICOM', 'SenSys', 'TMC', 'MobiCASE', 'MobiHoc', 'PerCom', 'IJMCMC', 'IJWMC'],
     'robotics': ['ICRA', 'ICRA (1)', 'ICRA (2)', 'IROS', 'Robotics: Science and Systems', 'I. J. Robotics Res.', 'Humanoids', 'Journal of Intelligent and Robotic Systems'],
-    'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)', 'Designs, Codes and Cryptography', 'TCC', 'ASIACRYPT', 'CANS', 'JOC', 'JMC'],
+    'crypt': ['CRYPTO', 'CRYPTO (1)', 'CRYPTO (2)', 'CRYPTO (3)', 'EUROCRYPT', 'EUROCRYPT (1)', 'EUROCRYPT (2)', 'EUROCRYPT (3)', 'Designs, Codes and Cryptography', 'TCC', 'TCC (B1)', 'ASIACRYPT', 'ASIACRYPT (1)', 'ASIACRYPT (2)', 'CANS', 'J. Cryptology', 'J. Mathematical Cryptology'],
     # SIGBio
     # - special handling for ISMB proceedings in Bioinformatics special issues.
     'bio': ['RECOMB', 'ISMB', 'Bioinformatics', 'ISMB/ECCB (Supplement of Bioinformatics)', 'Bioinformatics [ISMB/ECCB]', 'ISMB (Supplement of Bioinformatics)', 'PLoS Computational Biology', 'BCB', 'BIBM', 'BMC Bioinformatics', 'IEEE/ACM Trans. Comput. Biology Bioinform.'],
     # SIGDA
-    'da': ['ICCAD', 'DAC', 'TODAES', 'DATE', 'FTEDA'],
+    'da': ['ICCAD', 'DAC', 'TODAES', 'DATE', 'Foundations and Trends in Electronic Design Automation'],
     # SIGBED
-    'bed': ['RTSS', 'RTAS', 'EMSOFT', 'TECS', 'Real-Time Systems', 'RTCSA', 'LCTES', 'JRTIP', 'IJERTCS'],
+    'bed': ['RTSS', 'RTAS', 'EMSOFT', 'TECS', 'Real-Time Systems', 'RTCSA', 'LCTES', 'J. Real-Time Image Processing', 'IJERTCS'],
     # special handling of IEEE TVCG to select IEEE Vis and VR proceedings
     'vis': ['IEEE Visualization', 'VR', 'IEEE Trans. Vis. Comput. Graph.', '3DV', 'Journal of Visualization and Computer Animation', 'Information Visualization']
 }
