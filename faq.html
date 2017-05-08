@@ -61,12 +61,10 @@
     <div class="container">
       <div class="page-header">
 	
-        <h1>FAQ Computer Science Rankings (beta)</h1>
+        <h1>FAQ Computer Science Rankings</h1>
 	<div class="panel panel-info">
 	  <div class="panel-heading">
-	    <p>
-	      Frequently asked questions for <a href="http://csrankings.org">CSRankings.org</a>.
-	    </p>
+	   
 	    <div class="row">
 	      <!-- col-xs-3 col-sm-6 col-md-4  -->
 	      <div class="col-sm-12 col-md-12 col-lg-12">
@@ -221,7 +219,7 @@
 		      <tr>
 			<th>
 			  <p><br />
-			    How were the conferences selected?
+			    How were the conferences and journals selected?
 			    <br />
 			  </p>
 			</th>
@@ -232,80 +230,13 @@
 		      <tr>
 			<td>
 			  <p>
-			    The conferences listed (<em>at most three
-			    per area; see below</em>) were developed in
-			    consultation with faculty across a range
-			    of institutions. These
-			    are <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">the
-			    most impactful</a> and selective
-			    conferences for each area.
-			  </p>
-			</td>
-		      </tr>
-		    </tbody>
+			    Our list of conferences and journals was adapted from the existing list 
+			    by taking into consideration Google Scholar’s h5 index in an effort to have an objective metric. </p>
 
+			    <p>The h5 index measures how many and how often a publication's articles are cited by others. More information can be
+			    found at <a href="https://scholar.google.com/citations?view_op=top_venues&hl=en&vq=eng">Google
+			    Scholar Top Publications</a> 
 
-		    <thead>
-		      <tr>
-			<th>
-			  <p><br />Why is there a cap of three conferences per area?<br />
-			  </p>
-			</th>
-		      </tr>
-		    </thead>
-		    
-		    <tbody>
-		      <tr>
-			<td>
-			  <p>
-			    The cap is arbitrary but meant to include
-			    only the very top conferences in each
-			    area. All conferences listed must be
-			    roughly equivalent in terms of number of
-			    submissions, selectivity and impact to
-			    avoid creating incentives to target less
-			    selective conferences.
-			  </p>
-			</td>
-		      </tr>
-		    </tbody>
-
-		    <thead>
-		      <tr>
-			<th>
-			  <p><br />Why is conference X not listed?<br />
-			  </p>
-			</th>
-		      </tr>
-		    </thead>
-		    
-		    <tbody>
-		      <tr>
-			<td>
-			  <p>
-			    Currently, only at most three conferences
-			    are listed per area.  Additional
-			    conferences are not listed when they
-			    are not roughly equivalent to the rest in
-			    terms of number of submissions,
-			    selectivity and citation impact.
-			  </p>
-			  <p>For example: in the area of programming
-			    languages, PLDI and POPL
-			    currently get roughly 300 and 220
-			    submissions each year, respectively. Their
-			    acceptance rates over the last 10 years
-			    are 20% and 21%, while their
-			    citation impacts (measured by h5-median,
-			    via Google Scholar) are 69 and 65 (higher is better).
-			  </p>
-			  <p>For illustration, here are the stats for
-			  other conferences in this area which did not make the cut:
-			    <ul>
-			      <li>OOPSLA: 200 submissions / year, 25% acceptance rate, h5-median: 49.</li>
-			      <li>PPoPP: 150 submissions / year, 21% acceptance rate, h5-median: 50.</li>
-			      <li>ICFP: 100 submissions / year, 31% acceptance rate, h5-median: 35.</li>
-			    </ul>
 			  </p>
 			</td>
 		      </tr>
@@ -491,24 +422,18 @@
 		      <tr>
 			<td>
 			  <p>
-			    There are two ways you can do this:
-			    <ul>
-			      <li>
-				<em>Just a few changes:</em> Use this Google Form to enter the additions or changes: <a href="http://goo.gl/forms/MDDMN0UKuCwkOyFT2">http://goo.gl/forms/MDDMN0UKuCwkOyFT2</a>.
-			      </li>
-			      <li>
-				<em>Extensive modifications:</em> Issue a
+			   	Issue a
 				pull request for
-				the <a href="https://github.com/emeryberger/CSRankings">GitHub
-				  repo</a>. To add or modify a faculty
+				the <a href="https://github.com/rajenkins/CSRankings">GitHub
+				  repo</a>.</br>
+				   To add or modify a faculty
 				member's affiliation, update the
 				file <tt>faculty-affiliations.csv</tt>
-				and <tt>homepages.csv</tt>. If you are
+				and <tt>homepages.csv</tt>.</br> If you are
 				adding a non-US institution, add
-				it to <tt>country-info.csv</tt>.
-			      </li>
-			    </ul>
-			    In either case, please make sure that the
+				it to <tt>country-info.csv</tt>. </br>
+			  
+			    Please make sure that the
 			      faculty's name corresponds to their <a href="http://dblp.uni-trier.de/search/">DBLP</a>
 			      author entry.
 			  </p>
