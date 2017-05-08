@@ -40,7 +40,7 @@ A cron job must be setup to run update.sh once a month, in order to update publi
 
 Cron code: ``@monthly cd /path/to/CSrankings/ && ./update.sh``
 
-Note: ``./update.sh`` MUST be run inside the same folder where the Makefile resides (which is the case in the above cron command) and will run task on the first minute of the month.
+Note: ``./update.sh`` MUST be run inside the same folder where the Makefile resides (which is the case in the above cron command)
 
 There are also basic tests that can be run by navigating to the 'util' folder and executing the test.py file by typing ``python test.py``
 
