@@ -1,9 +1,9 @@
-Computer Science Rankings (beta)
+Computer Science Rankings
 ================================
 
 This ranking of top computer science schools is designed to identify institutions and faculty actively engaged in research across a number of areas of computer science. Unlike US News and World Report's approach, which is <a target="_blank" href="http://www.usnews.com/education/best-graduate-schools/articles/science-schools-methodology">exclusively based on surveys</a>, this ranking is entirely metrics-based. It measures the number of publications by faculty that have appeared at the most selective conferences in each area of computer science.
 
-This approach is intended to be difficult to game, since publishing in such conferences is generally difficult: contrast this with other approaches like citation-based metrics, which have been repeatedly shown to be <a target="_blank" href="http://arxiv.org/abs/1212.0638">easy</a> to <a target="_blank" href="http://evaluation.hypotheses.org/files/2010/12/pdf_IkeAntkareISSI.pdf">manipulate</a>. That said, incorporating citations in some form is a long-term goal. <em>This site is in beta and is a work in progress.</em>
+This approach is intended to be difficult to game, since publishing in such conferences is generally difficult: contrast this with other approaches like citation-based metrics, which have been repeatedly shown to be <a target="_blank" href="http://arxiv.org/abs/1212.0638">easy</a> to <a target="_blank" href="http://evaluation.hypotheses.org/files/2010/12/pdf_IkeAntkareISSI.pdf">manipulate</a>. That said, incorporating citations in some form is a long-term goal. <em>This codebase is extensively based on <a target="_blank" href="https://github.com/emeryberger/CSrankings">https://github.com/emeryberger/CSrankings</a>. </em>
 
 ---
 
@@ -24,7 +24,7 @@ G. Valiant , Harvard University```</a>.
 The code should run on any generic linux server (these directions are based on the Red Hat 6 machine).
 Because of GitHub size limits, to run this site, you will want to download the DBLP
 data by running ``make update-dblp`` (note that this will consume
-upwards of 19GiB of memory). To then rebuild the databases, just run
+upwards of 1.9GB of memory). To then rebuild the databases, just run
 ``make``. The server will need a minimum of 2 GB of space.
 
 You will also need to install libxml2-utils (or whatever package
@@ -46,14 +46,8 @@ There are also basic tests that can be run by navigating to the 'util' folder an
 
 ### Acknowledgements and other rankings
 
-This site was developed with extensive feedback from too many folks to
-mention here. It is partially based on code and data originally
-collected by [Swarat Chaudhuri](https://www.cs.rice.edu/~sc40/) (Rice
-University). The original faculty affiliation dataset was constructed
-by [Papoutsaki et
-al.](http://cs.brown.edu/people/alexpap/faculty_dataset.html); since
-then, it has been extensively cleaned and updated. A previous ranking
-also used DBLP and Brown's dataset for [ranking theoretical computer
-science](http://projects.csail.mit.edu/dnd/ranking/.).
+Our codebase is an adapation of the codebase provided at <a target="_blank" href="https://github.com/emeryberger/CSrankings">https://github.com/emeryberger/CSrankings</a>, and our project would not be possible without their work.
+
+We would also like to thank Professor Ming C. Lin for commissioning us to do this project, Professor Paul Stotts for keeping us on track throughout development, and John Sopko for helping us to host and update our website.
 
 
