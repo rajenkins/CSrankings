@@ -44,7 +44,7 @@ Note: ``./update.sh`` MUST be run inside the same folder where the Makefile resi
 
 There are also basic tests that can be run by navigating to the 'util' folder and executing the test.py file by typing ``python test.py``
 
-### Acknowledgements and other rankings
+### Acknowledgements
 
 Our codebase is an adapation of the codebase provided at <a target="_blank" href="https://github.com/emeryberger/CSrankings">https://github.com/emeryberger/CSrankings</a>, and our project would not be possible without their work.
 
